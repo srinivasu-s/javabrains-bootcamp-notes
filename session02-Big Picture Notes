@@ -1,0 +1,13 @@
+1. Browser makes sends a request to DNS.
+2. DNS resolves the URL and returns the nearest CDN to the user.
+3. Browser sends a page load request to the CDN.
+4. CDN responds with HTML, CSS and JavaScript.
+5. Browser renders the HTML, CSS and executes JavaScript.
+6. JavaScript sends REST API requests to backend server.
+7. Backend server responds with response and the browses renders the response.
+
+CDNs are edge locations serving static web pages.
+CDNs are also called web servers.
+
+servers like tomcat are called application servere that execute code and generate a response.
+
