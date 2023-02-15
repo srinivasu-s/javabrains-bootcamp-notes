@@ -9,5 +9,16 @@
 CDNs are edge locations serving static web pages.
 CDNs are also called web servers.
 
-servers like tomcat are called application servere that execute code and generate a response.
+servers like tomcat are called application servers that execute code and generate a response.
 
+Login Flow:
+
+1. User enters login credentials
+2. Form data is submitted using HTTP POST
+3. Server verifies the credentials
+4. Server generates a new session
+5. Server creates a new session ID.
+6. Server sends the session ID with Set-Cookie header
+7. Browser stores the cookie on the user's device
+8. Browser send the session ID to server with each request
+9. Server lookup the session id and if valid, generates a personalized response
